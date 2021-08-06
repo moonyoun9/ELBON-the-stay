@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'sebang';
+    src: url(../font/SEBANG\ Gothic.ttf);
+}
+/* @font-face {
+    font-family: 'hansans';
+    src: url(../font/Spoqa\ Han\ Sans\ Thin.ttf);
+} */
+@font-face {
+    font-family: 'cafe24';
+    src: url(../font/Cafe24SsurroundAir.ttf);
+}
+
+* {
+    font-family:'cafe24';
+}
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+    overflow: hidden;
+}
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+}
+/* nav */
+nav {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav h1 {
+    width: 120px;
+    padding: 30px 50px;
+    display: flex;
+}
+nav h1 img {
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    padding: 30px;
+}
+nav ul li.active {
+    border-top: 2px solid #fff;
+}
+nav ul li a {
+    padding: 10px 30px;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+nav .call {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(183, 183, 226);
+}
+.down {
+    background-color:rgba(0, 0, 0, 0.548);
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.5s;
+    transition-timing-function:ease;
+  }
+/* section1 */
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#section1 .box {
+    width: 450px;
+    height: 500px;
+    border: 10px solid #fff;
+    position: absolute;
+    top: 180px;
+    left: 800px;
+}
+.box h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 190px;
+    margin-bottom: 10px;
+    margin-left: 315px;
+}
+.box h2 {
+    color: #fff;
+    font-size: 4.5rem;
+    margin-left: 65px;
+}
+.box h2.right {
+    margin-left: 170px;
+}
+/* section2 */
+#section2 {
+    height: 100vh;
+}
+.left_txt {
+    float: left;
+    margin-top: 140px;
+    margin-left: 80px;
+}
+.left_txt h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+.left_txt .line {
+    background: linear-gradient(to top, rgb(183, 183, 226) 50%, transparent 50%);
+}
+.left_txt h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.left_txt h5 {
+    font-size: 1.1rem;
+    line-height: 27px;
+}
+.right_txt {
+    float: left;
+    margin-left: 150px;
+    margin-top: 190px;
+}
+.right_txt .line {
+    background: linear-gradient(to bottom, rgba(214, 214, 243, 0.808) 40%, transparent 50%);
+}
+.right_txt h2 {
+    margin-bottom: 20px;
+}
+.right_txt ul li p {
+    float: left;
+    margin-bottom: 10px;
+}
+.right_txt ul li p:first-child {
+    margin-right: 150px;
+    font-size: 1.1rem;
+}
+.right_txt .p1 {
+    margin-left: 16px;
+}
+.right_txt .p2 {
+    margin-left: 33px;
+}
+.right_txt .p3 {
+    margin-left: 35px;
+}
+iframe {
+    width: 100%;
+    height: 370px;
+    margin-top: 30px;
+}
+/* section3 */
+#section3 {
+    height: 100vh;
+}
+.slider {
+    height:400px;
+    overflow:hidden;
+    padding-top: 140px;
+}
+.slider li {
+    position:absolute;
+    width:100%;
+    height:500px;
+    opacity:0;
+}
+.slider li div {
+    width: 680px;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider li div img {
+    width: 100%;
+}
+.slider_btm {
+    padding-top: 60px;
+    margin-left: 415px;
+}
+.slider_btm li {
+    float: left;
+    padding: 0 5px;
+}
+.slider_btm li div {
+    width: 162px;
+}
+.slider_btm li div img {
+    width: 100%;
+}
+.btn #prev {
+    position: absolute;
+    top: 1950px;
+    left: 300px;
+    cursor: pointer;
+}
+.btn #next {
+    position: absolute;
+    top: 1950px;
+    right: 300px;
+    cursor: pointer;
+}
+.btn div {
+    width: 70px;
+}
+.btn div img {
+    width: 100%;
+}
+#section3 h4 {
+    margin-top: 120px;
+    text-align: center;
+    color: #aaa;
+}
+/* section4 */
+#section4 {
+    height: 100vh;
+}
+#section4 h3 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+}
+#section4 h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.gallery {
+    width: 100%;
+    display: flex;
+}
+.gallery_box {
+    width: 25%;
+}
+.gallery_box img {
+    width: 100%;
+    opacity: 0.8;
+}
+.gallery_box img:hover {
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 10;
+}
+.hover_bg {
+    background-color: #222;
+    width: 25%;
+    position: absolute;
+}
+#section4 .inner .ex_box {
+    position: relative;
+    left: 100px;
+}
+#section4 .inner .box_border {
+    border: 4px solid rgb(186, 186, 228);
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+}
+#section4 .inner .txt_top {
+    margin-top: 35px;
+    margin-left: 8px;
+    font-size: 1.1rem;
+}
+#section4 .inner .txt_btm {
+    margin-left: 73px;
+    font-size: 1.3rem;
+}
+#section4 .inner .explain {
+    position: absolute;
+    top: 0;
+    left: 300px; 
+}
+/* section5 */
+#section5 {
+    height: 100vh;
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#section5 form {
+    background-color: rgb(9, 9, 54);
+    width: 450px;
+    height: 510px;
+    position: absolute;
+    top: 150px;
+    left: 340px;
+}
+#section5 form h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+#section5 form p {
+    margin-left: 30px;
+}
+#section5 form p input {
+    width: 374px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+#section5 form p .massage {
+    height: 160px;
+}
+#section5 form p .submit {
+    height: 50px;
+    width: 389px;
+    background-color: rgb(101, 108, 122);
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* footer */
+footer {
+    background-color: #1f2233;
+    width: 100%;
+    height: 250px;
+    font-size: 0.9rem;
+}
+footer .txt {
+    margin-left: 380px;
+    padding-top: 40px;
+    height: 50px;
+}
+footer .txt li {
+    float: left;
+    color: #fff;
+    margin-right: 80px;
+}
+footer .logo {
+    height: 60px;
+    margin-left: 430px;
+}
+footer .logo li {
+    float: left;
+    width: 150px;
+    margin-right: 90px;
+}
+footer .logo li:last-child {
+    width: 180px;
+}
+footer .logo li img {
+    width: 100%;
+}
+footer .copy {
+    color: #fff;
+    text-align: center;
+}
+footer .notice {
+    color: #aaa;
+    text-align: center;
+    margin-top: 12px;
+}
